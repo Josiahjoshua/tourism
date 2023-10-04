@@ -1,0 +1,41 @@
+/* Add some initial styles for the topbar */
+#topbar {
+    display: block; /* Initially visible */
+    transition: opacity 0.3s; /* Add a transition for smooth hiding */
+    opacity: 1; /* Initial opacity */
+}
+
+/* Add styles to hide the topbar on scroll */
+.scrolled #topbar {
+    opacity: 0; /* Hide the topbar by reducing opacity */
+}
+
+/* Add CSS to make the navbar sticky */
+#sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Set the background color you desire */
+    z-index: 1000; /* Set a z-index value to ensure it appears above other content */
+}
+
+/* Add initial styles for the topbar */
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Adjust background color as needed */
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+/* Add styles to hide the topbar on scroll */
+.scrolled #topbar {
+    opacity: 0;
+}
+
+/* CSS for logo */
+.logo-img {
+    width: 40px; /* Adjust the width as needed */
+    margin-right: 10px; /* Adjust the spacing between the logo and text */
+}

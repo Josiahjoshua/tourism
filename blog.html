@@ -24,6 +24,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 
 <body>
@@ -63,39 +64,39 @@
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark">GOOD WANDERERS</span> TOUR</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="package.html" class="nav-item nav-link">Tour Packages</a>
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item active">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div> -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+     <!-- Navbar Start -->
+ <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="" class="navbar-brand">
+                <img src="img/logo.png" alt="Logo" class="logo-img">
+                <h2 class="m-0 text-primary"><span class="text-dark">GOOD WANDERERS</span> TOUR</h2>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="package.html" class="nav-item nav-link">Tour Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu border-0 rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item">Blog</a>
+                            <a href="destination.html" class="dropdown-item">Destination</a>
+                            <a href="guide.html" class="dropdown-item">Travel Guides</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
                     </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
-    <!-- Navbar End -->
+</div>
+<!-- Navbar End -->
 
 
     <!-- Header Start -->
@@ -123,13 +124,25 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 1</option>
-                                        <option value="3">Destination 1</option>
+                                    <!-- <label for="destinationSelect" class="form-label">Select a Destination:</label> -->
+                                    <select class="custom-select px-4" id="destinationSelect" style="height: 47px;">
+                                        <option selected disabled>Choose Destination</option>
+                                        <option value="1">Serengeti National Park</option>
+                                        <option value="2">Mount Kilimanjaro</option>
+                                        <option value="3">Ngorongoro Crater</option>
+                                        <option value="4">Zanzibar</option>
+                                        <option value="5">Selous Game Reserve</option>
+                                        <option value="6">Ruaha National Park</option>
+                                        <option value="7">Mikumi National Park</option>
+                                        <option value="8">Tarangire National Park</option>
+                                        <option value="9">Lake Manyara National Park</option>
+                                        <option value="10">Arusha National Park</option>
+                                        <option value="11">Pemba Island</option>
+                                        <option value="12">Mahale Mountains National Park</option>
+                                        <option value="13">Mafia Island</option>
+                                        <option value="14">Gombe Stream National Park</option>
                                     </select>
-                                </div>
+                                </div>                               
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
@@ -148,10 +161,11 @@
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1">Duration 1</option>
-                                        <option value="2">Duration 1</option>
-                                        <option value="3">Duration 1</option>
+                                        <option selected disabled>Duration</option>
+                                        <option value="1">3 Days</option>
+                                        <option value="2">1 week</option>
+                                        <option value="3">2 Weeks</option>
+                                        <option value="3">1 Month</option>
                                     </select>
                                 </div>
                             </div>
@@ -353,7 +367,7 @@
                     <!-- Author Bio -->
                     <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
                         <img src="img/user.jpg" class="img-fluid mx-auto mb-3" style="width: 100px;">
-                        <h3 class="text-primary mb-3">John Doe</h3>
+                        <h3 class="text-primary mb-3">ADMIN</h3>
                         <p>Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est  ipsum erat kasd amet elitr</p>
                         <div class="d-flex justify-content-center">
                             <a class="text-primary px-2" href="">
@@ -375,7 +389,7 @@
                     </div>
     
                     <!-- Search Form -->
-                    <div class="mb-5">
+                    <!-- <div class="mb-5">
                         <div class="bg-white" style="padding: 30px;">
                             <div class="input-group">
                                 <input type="text" class="form-control p-4" placeholder="Keyword">
@@ -385,10 +399,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Category List -->
-                    <div class="mb-5">
+                    <!-- <div class="mb-5">
                         <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categories</h4>
                         <div class="bg-white" style="padding: 30px;">
                             <ul class="list-inline m-0">
@@ -419,7 +433,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
     
                     <!-- Recent Post -->
                     <div class="mb-5">
@@ -448,7 +462,7 @@
                     </div>
     
                     <!-- Tag Cloud -->
-                    <div class="mb-5">
+                    <!-- <div class="mb-5">
                         <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Tag Cloud</h4>
                         <div class="d-flex flex-wrap m-n1">
                             <a href="" class="btn btn-light m-1">Design</a>
@@ -458,7 +472,7 @@
                             <a href="" class="btn btn-light m-1">Writing</a>
                             <a href="" class="btn btn-light m-1">Consulting</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -508,9 +522,9 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>2958 Street, Arusha, Tanzania</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+255 7** *** ***</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@goodwandererstour.com</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">
                     <div class="input-group">
