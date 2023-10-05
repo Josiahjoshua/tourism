@@ -36,6 +36,28 @@
 
 /* CSS for logo */
 .logo-img {
-    width: 40px; /* Adjust the width as needed */
+    width: 80px; /* Adjust the width as needed */
     margin-right: 10px; /* Adjust the spacing between the logo and text */
+}
+
+/* CSS to style the image and adjust its position */
+.image-container {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    margin-right: 5px; /* Add margin to separate the image from the navbar */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+}
+
+/* CSS for the colorless container */
+.colorless-container {
+    /* No need to specify a background color; it defaults to transparent */
+    padding: 10px; /* You can add padding as needed */
+   
 }

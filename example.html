@@ -1,0 +1,93 @@
+<div class="container-fluid booking mt-5 pb-5">
+    <div class="container">
+        <div class="bg-light shadow p-4">
+            <div class="row align-items-center" style="min-height: 60px;">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form id="safari-booking-1" class="booking-form" method="post" enctype="multipart/form-data" action="" novalidate="novalidate">
+                                <input type="hidden" name="form_id" value="1">
+
+                                <!-- Section 1: User Details -->
+                                <fieldset class="booking-fieldset">
+                                    <legend>Please Provide Your Details</legend>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="vfb-11-first">First Name <span class="required">*</span></label>
+                                            <input type="text" name="vfb-11[first]" id="vfb-11-first" class="form-control required">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="vfb-11-last">Last Name <span class="required">*</span></label>
+                                            <input type="text" name="vfb-11[last]" id="vfb-11-last" class="form-control required">
+                                        </div>
+                                    </div>
+                                    <!-- ... (other user details fields) ... -->
+                                </fieldset>
+
+                                <!-- Section 2: Plan Your Trip -->
+                                <fieldset class="booking-fieldset">
+                                    <legend>Plan Your Trip</legend>
+                                    <div class="form-group">
+                                        <label for="date1">Travel Date From <span class="required">*</span></label>
+                                        <div class="input-group date" id="date1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input required" placeholder="Travel Date From*" data-target="#date1" data-toggle="datetimepicker"/>
+                                            <div class="input-group-append" data-target="#date1" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ... (other trip planning fields) ... -->
+                                </fieldset>
+
+                                <!-- Section 3: Destinations -->
+                                <fieldset class="booking-fieldset">
+                                    <legend>What are the destinations of your choice?</legend>
+                                    <div class="form-group">
+                                        <label for="destinationSelect" class="form-label">Tanzania Destination:</label>
+                                        <select class="custom-select" id="destinationSelect">
+                                            <option selected disabled>Choose Destination</option>
+                                            <option value="1">Serengeti National Park</option>
+                                            <option value="2">Mount Kilimanjaro</option>
+                                            <option value="3">Ngorongoro Crater</option>
+                                            <option value="4">Zanzibar</option>
+                                            <option value="5">Selous Game Reserve</option>
+                                            <option value="6">Ruaha National Park</option>
+                                            <option value="7">Mikumi National Park</option>
+                                            <option value="8">Tarangire National Park</option>
+                                            <option value="9">Lake Manyara National Park</option>
+                                            <option value="10">Arusha National Park</option>
+                                            <option value="11">Pemba Island</option>
+                                            <option value="12">Mahale Mountains National Park</option>
+                                            <option value="13">Mafia Island</option>
+                                            <option value="14">Gombe Stream National Park</option>
+                                            <!-- ... (destination options) ... -->
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vfb-23">Tell Us More</label>
+                                        <textarea name="vfb-23" id="vfb-23" class="form-control"></textarea>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Section 4: Verification with reCAPTCHA -->
+                                <fieldset class="booking-fieldset">
+                                    <legend>Verification</legend>
+                                    <div class="form-group">
+                                        <!-- Add reCAPTCHA widget here -->
+                                        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                    </div>
+                                    <!-- ... (other verification fields) ... -->
+                                </fieldset>
+
+                                <input type="hidden" name="_wp_http_referer" value="/enquiry/">
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
