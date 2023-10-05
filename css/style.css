@@ -9770,6 +9770,12 @@ h6,
 }
 
 /*josiah css */
-.text-dark:hover {
-  background-color: greenyellow; /* You can change this color to your preferred highlight color */
+
+.glowing-text {
+  color: #fff !important;
+  transition: text-shadow 0.3s; /* Add a smooth transition effect */
+}
+
+.glowing-text:hover {
+  text-shadow: 0 0 10px greenyellow; /* Adjust the color and size as needed */
 }
