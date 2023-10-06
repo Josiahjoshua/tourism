@@ -2365,8 +2365,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #7AB730;
-  border-color: #7AB730;
+  background-color: #243b24;
+  border-color: #945c27;
 }
 
 .btn-primary:hover {
@@ -2660,13 +2660,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #7AB730;
+  color: #243b20;
   border-color: #7AB730;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #7AB730;
+  background-color: #945c27;
   border-color: #7AB730;
 }
 
@@ -3976,7 +3976,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #7AB730;
+  background-color: #945c27;
 }
 
 .nav-fill > .nav-link,
@@ -6094,7 +6094,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #7AB730 !important;
+  background-color: #945c27 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9264,7 +9264,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #7AB730 !important;
+  color: #945c27 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9520,7 +9520,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #7AB730;
+  color: #945c27;
 }
 
 @media (max-width: 991.98px) {
@@ -9610,7 +9610,7 @@ h6,
 }
 
 .service-item:hover {
-  box-shadow: 0 0 30px #CCCCCC;
+  box-shadow: 0 0 30px #945c27;
 }
 
 .service-item i {
@@ -9626,7 +9626,7 @@ h6,
 }
 
 .service-item:hover i {
-  background: #7AB730;
+  background: #243b20;
   color: #FFFFFF;
 }
 
@@ -9635,7 +9635,7 @@ h6,
 }
 
 .package-item:hover {
-  box-shadow: 0 0 30px #CCCCCC;
+  box-shadow: 0 0 30px #243b20;
 }
 
 .bg-registration {
@@ -9667,7 +9667,7 @@ h6,
 }
 
 .team-item:hover {
-  box-shadow: 0 0 30px #CCCCCC;
+  box-shadow: 0 0 30px #945c27;
 }
 
 .team-item:hover .team-social {
@@ -9717,17 +9717,17 @@ h6,
   margin: 0 5px;
   width: 20px;
   height: 20px;
-  background: #DDDDDD;
+  background: #243b20;
   transition: .5s;
 }
 
 .testimonial-carousel .owl-dot.active {
   width: 40px;
-  background: #7AB730;
+  background: #945c27;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
-  box-shadow: 0 0 30px #CCCCCC;
+  box-shadow: 0 0 30px #243b20;
 }
 
 .blog-item {
@@ -9735,7 +9735,7 @@ h6,
 }
 
 .blog-item:hover {
-  box-shadow: 0 0 30px #CCCCCC;
+  box-shadow: 0 0 30px #945c27;
 }
 
 .blog-date {
@@ -9748,7 +9748,7 @@ h6,
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #7AB730;
+  background: #243b20;
 }
 
 .blog-date::after {
